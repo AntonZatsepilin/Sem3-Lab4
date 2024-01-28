@@ -1,6 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
-#include "graph.hpp"
+#include "graphs/graph.hpp"
 
 TEST_CASE("Testing Graph class") {
     Graph g(5);
@@ -47,7 +47,6 @@ TEST_CASE("Testing Graph class") {
 
     g2.shortestPath(0, 2);
 }
-
 
 TEST_CASE("Testing Graph with negative vertices") {
     Graph g(5);

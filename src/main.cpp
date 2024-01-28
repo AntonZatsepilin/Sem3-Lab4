@@ -1,6 +1,4 @@
-#include <iostream>
-
-#include "graph.hpp"
+#include "graphs/graph.hpp"
 
 int main() {
     int V;

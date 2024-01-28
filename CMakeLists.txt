@@ -22,8 +22,8 @@ src/smart_sequences/sequences/SmartPtrArraySequence/SmartPtrArraySequence.tpp
 src/smart_sequences/sequences/SmartPtrSequence.hpp
 src/smart_sequences/sequences/SmartPtrLinkedListSequence/SmartPtrLinkedListSequence.hpp
 src/smart_sequences/sequences/SmartPtrLinkedListSequence/SmartPtrLinkedListSequence.tpp
-src/graph.hpp
-src/graph.cpp) 
+src/graphs/graph.hpp
+src/graphs/graph.cpp) 
 
 
 add_executable(tests
@@ -46,5 +46,5 @@ src/smart_sequences/sequences/SmartPtrArraySequence/SmartPtrArraySequence.tpp
 src/smart_sequences/sequences/SmartPtrSequence.hpp
 src/smart_sequences/sequences/SmartPtrLinkedListSequence/SmartPtrLinkedListSequence.hpp
 src/smart_sequences/sequences/SmartPtrLinkedListSequence/SmartPtrLinkedListSequence.tpp
-src/graph.hpp
-src/graph.cpp) 
+src/graphs/graph.hpp
+src/graphs/graph.cpp) 

@@ -1,8 +1,5 @@
 #include "graph.hpp"
 
-#include <algorithm>
-#include <iostream>
-
 Graph::Graph(int V) : V(V), adj(V), color(V, -1) {}
 
 bool Graph::isValidVertex(int v) { return v >= 0 && v < V; }
@@ -10,6 +7,10 @@ bool Graph::isValidVertex(int v) { return v >= 0 && v < V; }
 void Graph::addEdge(int v, int w) {
     if (!isValidVertex(v) || !isValidVertex(w)) {
         std::cout << "Неверные вершины. Попробуйте еще раз.\n";
+        return;
+    }
+    if (hasEdge(v, w) || hasEdge(w, v)) {
+        std::cout << "Ребро уже существует. Попробуйте еще раз.\n";
         return;
     }
     adj[v].push_back(w);
